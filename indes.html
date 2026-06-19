@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picando y Pecando</title>
+    
+    <!-- 1. BOOTSTRAP CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- 2. TUS ESTILOS PROPIOS (Asegúrate de que esta ruta sea exacta) -->
+    <link rel="stylesheet" href="asset/estilos/estilos.css">
+</head>
+
+<body class="bg-dark text-light"> <!-- Agregamos fondo oscuro nativo y texto claro -->
+
+    <!-- =========================
+         NAVBAR
+    ========================== -->
+    <nav class="site-nav">
+        <div class="nav-left">
+            <!-- Corregido: removida la barra diagonal inicial -->
+            <img src="asset/img/718980690_17955051894153326_4760611748655106490_n.jpg" alt="Logo" class="logo">
+            <h1 class="site-title text-light">
+                Picando y <span class="text-warning">Pecando</span>
+            </h1>
+        </div>
+        <ul class="nav-list">
+            <li><a href="indes.html" class="nav-link text-light">Inicio</a></li>
+            <li><a href="productos.html" class="nav-link text-light">Productos</a></li>
+            <li><a href="nosotros.html" class="nav-link text-light">Nosotros</a></li>
+            <li><a href="contacto.html" class="nav-link text-light">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- =========================
+         HERO (CARRUSEL)
+    ========================== -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel" style="max-width: 100%; margin: 15px auto; border-radius: 10px; overflow: hidden;">
+        <div class="carousel-inner" style="aspect-ratio: 16/6; display: flex; align-items: center;">
+            <div class="carousel-item active" style="height: 100%;">
+                <img src="/asset/img/promociones/ChatGPT Image 17 jun 2026, 20_44_47.png" class="d-block w-100" alt="Promoción 1" style="height: 100%; width: 100%; object-fit: cover;">
+            </div>
+            <div class="carousel-item" style="height: 100%;">
+                <img src="/asset/img/promociones/ChatGPT Image 17 jun 2026, 21_01_32.png" class="d-block w-100" alt="Promoción 2" style="height: 100%; width: 100%; object-fit: cover;">
+                <a href="/productos.html"><button class="btn btn-danger position-absolute" style="bottom: 20px; left: 50%; transform: translateX(-50%);">¡Ver Productos!</button></a>
+            </div>
+            <div class="carousel-item" style="height: 100%;">
+                <img src="/asset/img/promociones/Untitled.jpg" class="d-block w-100" alt="Promoción 3" style="height: 100%; width: 100%; object-fit: cover;">
+                <a href="https://www.instagram.com/picandoypecando/"><button class="btn btn-danger position-absolute" style="bottom: 20px; left: 50%; transform: translateX(-50%);">¡Sigue nuestro Instagram!</button></a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Siguiente</span>
+        </button>
+    </div>
+
+    <!-- =========================
+         PRODUCTOS
+    ========================== -->
+    <section id="productos" class="container my-5">
+        <h2 class="text-center mb-4 text-warning">Nuestros Productos</h2>
+        
+        <div class="row g-4">
+            
+            <!-- Producto 1 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                    <img src="/asset/img/productos/pollo a la plancha.png" class="card-img-top product-hamburguesa" alt="Hamburguesa Especial">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Hamburguesa Especial</h3>
+                        <p class="card-text flex-grow-1">
+                            Carne artesanal, queso cheddar, vegetales frescos y salsa especial.
+                        </p>
+                        <button class="btn btn-danger w-100 mt-auto">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 2 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                   <img src="/asset/img/productos/arepa rellena.jpg" alt="Arepa rellena Con carne desmechada" class="card-img-top">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Arepa rellena Con carne desmechada</h3>
+                        <p class="card-text flex-grow-1">
+                            Crujientes alitas bañadas en salsa BBQ picante.
+                        </p>
+                        <button class="btn btn-danger w-100 mt-auto">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Producto 3 -->
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                    <img src="/asset/img/productos/tostada.png" class="card-img-top" alt="Salchipapa">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Salchipapa Suprema</h3>
+                        <p class="card-text flex-grow-1">
+                            Papas crujientes, salchicha, queso y salsas de la casa.
+                        </p>
+                        <button class="btn btn-danger w-100 mt-auto">Comprar</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- =========================
+         SECCIÓN DE PEDIDOS
+    ========================= -->
+    <!-- =========================
+         CONTACTENOS / TESTIMONIOS
+    ========================== -->
+    <section id="contactenos" class="container my-5 order-section">
+        <div class="row g-4 align-items-start">
+            <div class="col-12 col-lg-5">
+                <div class="p-4 rounded-4 contact-card">
+                    <h2 class="text-warning mb-3">Contáctenos</h2>
+                    <p class="text-light mb-4">Escríbenos por WhatsApp o visítanos para hacer tu pedido, preguntar por promociones o reservar tu comida.</p>
+                    <div class="mb-3">
+                        <p class="mb-1"><strong>📍 Dirección</strong></p>
+                        <p class="text-light">Cl. 59 #4c1-07, Comuna 5, Cali, Valle del Cauca</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-1"><strong>📞 WhatsApp</strong></p>
+                        <p class="text-light">+57 310 760 5741</p>
+                    </div>
+                    <div class="mb-3">
+                        <p class="mb-1"><strong>📧 Email</strong></p>
+                        <p class="text-light">contacto@picandoypecando.com</p>
+                    </div>
+                    <a href="https://wa.me/573216714687?text=Hola%20Picando%20y%20Pecando%2C%20quiero%20más%20información" target="_blank" class="btn btn-danger w-100">Enviar WhatsApp</a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-7">
+                <h2 class="text-warning mb-3">Comentarios de clientes</h2>
+                <div class="testimonial-carousel" id="testimonialCarousel">
+                    <div class="testimonial-card active" data-index="0">
+                        <p>“La mejor comida a domicilio en Cali. Los sabores son increíbles y siempre llega caliente.”</p>
+                        <div class="name">Carolina T.</div>
+                        <div class="role">Cliente feliz</div>
+                    </div>
+                    <div class="testimonial-card" data-index="1">
+                        <p>“Pedidos rápidos, buen servicio y precios justos. Volveré pronto con la familia.”</p>
+                        <div class="name">Javier R.</div>
+                        <div class="role">Amante de la cocina</div>
+                    </div>
+                    <div class="testimonial-card" data-index="2">
+                        <p>“El ambiente es perfecto y la comida no decepciona. Mis favoritos son las alitas y la tostada.”</p>
+                        <div class="name">María P.</div>
+                        <div class="role">Recomienda el local</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         CONTACTO
+    ========================== -->
+    <section id="contacto" class="container my-5 text-center">
+        <h2 class="text-warning">Contáctanos</h2>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-4"><p class="fs-5">📍Cl. 59 #4c1-07, Comuna 5, Cali, Valle del Cauca </p></div>
+            <div class="col-md-4"><p class="fs-5">📞 +57 321-671-4687</p></div>
+            <div class="col-md-4"><p class="fs-5">📧 contacto@picandoypecando.com</p></div>
+        </div>
+    </section>
+
+    <!-- =========================
+         SECCIÓN DE INSTAGRAM
+    ========================== -->
+    <section class="container py-5">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h2 class="text-warning mb-3">Síguenos en Instagram</h2>
+                <p class="text-light mb-4">Descubre nuestras recetas, promociones exclusivas y los mejores momentos de nuestros clientes. ¡Únete a nuestra comunidad!</p>
+                <a href="https://www.instagram.com/picandoypecando/" target="_blank" class="btn btn-danger btn-lg">
+                    📸 Visita nuestro Instagram
+                </a>
+            </div>
+            <div class="col-md-6 text-center">
+                <div class="p-4" style="background-color: #222; border-radius: 12px;">
+                    <div style="font-size: 80px; color: #E4405F; margin-bottom: 15px;">📱</div>
+                    <p class="text-light"><strong>@picandoypecando</strong></p>
+                    <p class="text-muted">Miles de seguidores disfrutando de nuestras delicias</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================
+         FOOTER
+    ========================== -->
+    <footer class="bg-black text-center py-3 border-top border-danger">
+        <p class="mb-0 text-muted">
+            © 2026 Picando y Pecando And Andres Moya Corporation - Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <!-- 3. BOOTSTRAP JAVASCRIPT -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+    (function(){
+        const phoneTo = '573216714687'; // Número destino (sin +)
+        const items = Array.from(document.querySelectorAll('.product-item'));
+        const select = document.getElementById('orderProduct');
+        const qtyEl = document.getElementById('orderQty');
+        const totalEl = document.getElementById('orderTotal');
+        const sendBtn = document.getElementById('sendWhatsApp');
+        const confirmBtn = document.getElementById('confirmSend');
+        const modalEl = document.getElementById('orderConfirmModal');
+        let bsModal = null;
+        if(modalEl) bsModal = new bootstrap.Modal(modalEl);
+
+        function parsePrice(v){ return Number(v)||0 }
+        function formatCurrency(n){ return '$' + n.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ".") }
+
+        function getSelectedProductInfo(){
+            const name = select.value;
+            const item = items.find(it => (it.dataset.name === name) || (it.querySelector('.product-name') && it.querySelector('.product-name').innerText === name));
+            if(item){
+                return { name: item.dataset.name || name, price: parsePrice(item.dataset.price) };
+            }
+            // fallback: try active
+            const active = items.find(it => it.classList.contains('active'));
+            if(active) return { name: active.dataset.name, price: parsePrice(active.dataset.price) };
+            return { name, price: 0 };
+        }
+
+        function updateTotalDisplay(){
+            const info = getSelectedProductInfo();
+            const qty = Number(qtyEl.value) || 1;
+            const total = info.price * qty;
+            totalEl.innerText = formatCurrency(total);
+            return { info, qty, total };
+        }
+
+        // Initialize total
+        if(select && qtyEl && totalEl) updateTotalDisplay();
+
+        // product item click
+        items.forEach(it=>{
+            it.addEventListener('click', function(){
+                items.forEach(i=>i.classList.remove('active'));
+                this.classList.add('active');
+                const name = this.dataset.name || (this.querySelector('.product-name') && this.querySelector('.product-name').innerText);
+                // select matching option if exists
+                let found = false;
+                for(let i=0;i<select.options.length;i++){
+                    if(select.options[i].text === name || select.options[i].value === name){ select.selectedIndex = i; found = true; break; }
+                }
+                if(!found){ select.value = name }
+                if(qtyEl) qtyEl.value = 1;
+                updateTotalDisplay();
+            });
+        });
+
+        // qty change updates total
+        if(qtyEl) qtyEl.addEventListener('change', updateTotalDisplay);
+        if(select) select.addEventListener('change', updateTotalDisplay);
+
+        // simple phone validation (digits only, length 7-13)
+        function validPhone(p){ return /^\d{7,13}$/.test(p) }
+
+        // Show confirmation modal with order summary
+        if(sendBtn){
+            sendBtn.addEventListener('click', function(){
+                const name = document.getElementById('orderName').value.trim();
+                const phone = document.getElementById('orderPhone').value.trim();
+                const address = document.getElementById('orderAddress').value.trim();
+                const notes = document.getElementById('orderNotes').value.trim();
+                if(!name || !phone || !address){ alert('Por favor completa nombre, teléfono y dirección.'); return; }
+                if(!validPhone(phone)){ alert('Ingresa un teléfono válido (solo números, 7-13 dígitos).'); return; }
+                const { info, qty, total } = updateTotalDisplay();
+                const body = document.getElementById('orderConfirmBody');
+                body.innerHTML = `
+                    <p><strong>Nombre:</strong> ${name}</p>
+                    <p><strong>Teléfono:</strong> ${phone}</p>
+                    <p><strong>Dirección:</strong> ${address}</p>
+                    <p><strong>Producto:</strong> ${info.name} <span class=\"text-muted\">(${formatCurrency(info.price)})</span></p>
+                    <p><strong>Cantidad:</strong> ${qty}</p>
+                    <p><strong>Total:</strong> <strong>${formatCurrency(total)}</strong></p>
+                    ${notes ? `<p><strong>Observaciones:</strong> ${notes}</p>` : ''}
+                `;
+                if(bsModal) bsModal.show();
+            });
+        }
+
+        // Confirm send -> open WhatsApp
+        if(confirmBtn){
+            confirmBtn.addEventListener('click', function(){
+                const name = document.getElementById('orderName').value.trim();
+                const phone = document.getElementById('orderPhone').value.trim();
+                const address = document.getElementById('orderAddress').value.trim();
+                const notes = document.getElementById('orderNotes').value.trim();
+                const { info, qty, total } = updateTotalDisplay();
+                const parts = [
+                    'Pedido desde sitio web:',
+                    `- Nombre: ${name}`,
+                    `- Teléfono: ${phone}`,
+                    `- Dirección: ${address}`,
+                    `- Producto: ${info.name} (${formatCurrency(info.price)})`,
+                    `- Cantidad: ${qty}`,
+                    `- Total: ${formatCurrency(total)}`
+                ];
+                if(notes) parts.push(`- Observaciones: ${notes}`);
+                const text = encodeURIComponent(parts.join('\n'));
+                const url = `https://wa.me/${phoneTo}?text=${text}`;
+                if(bsModal) bsModal.hide();
+                window.open(url, '_blank');
+            });
+        }
+    })();
+    </script>
+</body>
+
+</html>

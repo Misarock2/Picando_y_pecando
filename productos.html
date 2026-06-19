@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productos - Picando y Pecando</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="asset/estilos/estilos.css">
+</head>
+
+<body class="bg-dark text-light">
+    <nav class="site-nav">
+        <div class="nav-left">
+            <img src="asset/img/718980690_17955051894153326_4760611748655106490_n.jpg" alt="Logo" class="logo">
+            <h1 class="site-title text-light">Picando y <span class="text-warning">Pecando</span></h1>
+        </div>
+        <ul class="nav-list">
+            <li><a href="indes.html" class="nav-link text-light">Inicio</a></li>
+            <li><a href="productos.html" class="nav-link active text-light" aria-current="page">Productos</a></li>
+            <li><a href="nosotros.html" class="nav-link text-light">Nosotros</a></li>
+            <li><a href="contacto.html" class="nav-link text-light">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <section class="container my-5">
+        <h2 class="text-center mb-4 text-warning">Nuestros Productos</h2>
+        <p class="text-center text-muted mb-5">Descubre nuestras opciones más populares y haz tu pedido directamente desde la página principal.</p>
+        <div class="row g-4">
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                    <img src="/asset/img/productos/tostada.png" class="card-img-top product-hamburguesa" alt="Hamburguesa Especial">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Tostada Especial</h3>
+                        <p class="card-text flex-grow-1">Tostada de platano con carne desmechada,pollo,maiz tierno, queso y salsas algusto</p>
+                        <div class="mt-auto">
+                            <p class="text-white mb-1"><strong>Precio:</strong> $20.000</p>
+                            <button type="button" class="btn btn-danger w-100" onclick="addToCart('Tostada Especial', 20000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                    <img src="/asset/img/productos/pollo a la plancha.png" class="card-img-top" alt="Pollo a la Plancha">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Pollo a la Plancha</h3>
+                        <p class="card-text flex-grow-1">Delicioso pollo a la plancha, sazonado con hierbas y especias. salsa de la casa </p>
+                        <div class="mt-auto">
+                            <p class="text-white mb-1"><strong>Precio:</strong> $18.000</p>
+                            <button type="button" class="btn btn-danger w-100" onclick="addToCart('Pollo a la Plancha', 18000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                    <img src="asset/img/salchipapa.jpg" class="card-img-top" alt="Salchipapa Suprema">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Salchipapa Suprema</h3>
+                        <p class="card-text flex-grow-1">Papas crujientes, salchicha, queso y salsas de la casa.</p>
+                        <div class="mt-auto">
+                            <p class="text-white mb-1"><strong>Precio:</strong> $15.000</p>
+                            <button type="button" class="btn btn-danger w-100" onclick="addToCart('Salchipapa Suprema', 15000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                    <img src="asset/img/productos/papas_francesa.jpg" class="card-img-top" alt="Papas a la Francesa">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Papas a la Francesa</h3>
+                        <p class="card-text flex-grow-1">Porción generosa de papas crujientes, sal y acompañamientos al gusto.</p>
+                        <div class="mt-auto">
+                            <p class="text-white mb-1"><strong>Precio:</strong> $8.000</p>
+                            <button type="button" class="btn btn-danger w-100" onclick="addToCart('Papas a la Francesa', 8000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                    <img src="asset/img/productos/perro_caliente.jpg" class="card-img-top" alt="Perro Caliente Especial">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Perro Caliente Especial</h3>
+                        <p class="card-text flex-grow-1">Pan tostado, salchicha artesanal, queso rallado y salsas caseras.</p>
+                        <div class="mt-auto">
+                            <p class="text-white mb-1"><strong>Precio:</strong> $12.000</p>
+                            <button type="button" class="btn btn-danger w-100" onclick="addToCart('Perro Caliente Especial', 12000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="card h-100 bg-secondary text-light border-0 shadow">
+                    <img src="asset/img/productos/pizza_individual.jpg" class="card-img-top" alt="Pizza Individual">
+                    <div class="card-body d-flex flex-column">
+                        <h3 class="card-title h5 text-warning">Pizza Individual</h3>
+                        <p class="card-text flex-grow-1">Base crujiente, salsa napolitana, queso mozzarella y toppings a elección.</p>
+                        <div class="mt-auto">
+                            <p class="text-white mb-1"><strong>Precio:</strong> $22.000</p>
+                            <button type="button" class="btn btn-danger w-100" onclick="addToCart('Pizza Individual', 22000)">Agregar al carrito</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="container my-5 order-section" id="orderSection">
+        <div class="row g-4 align-items-start">
+            <div class="col-12 col-lg-6">
+                <h2 class="text-warning mb-3">Tu carrito de compras</h2>
+                <p class="text-muted mb-4">Agrega varios productos al carrito y envía tu pedido completo por WhatsApp Business.</p>
+                <div class="card bg-dark border-secondary mb-4">
+                    <div class="card-body p-4">
+                        <h3 class="text-warning mb-3">Productos en el carrito</h3>
+                        <ul class="list-group list-group-flush text-light" id="cartList">
+                            <li class="list-group-item bg-dark border-secondary">Carrito vacío</li>
+                        </ul>
+                        <div class="mt-3 text-light">
+                            <p class="mb-1"><strong>Total:</strong> <span id="cartTotal">$0</span></p>
+                        </div>
+                    </div>
+                </div>
+                <form id="cartForm">
+                    <div class="row g-3">
+                        <div class="col-12 col-md-6">
+                            <label for="customerName" class="form-label text-white">Nombre</label>
+                            <input id="customerName" type="text" placeholder="Tu nombre" class="form-control bg-dark text-light border-1 border-secondary" required>
+                        </div>
+                        <div class="col-12 col-md-6">
+                            <label for="customerPhone" class="form-label text-white">Tu WhatsApp</label>
+                            <input id="customerPhone" type="tel" placeholder="Ej: 3001234567" class="form-control bg-dark text-light border-1 border-secondary" required>
+                        </div>
+                    </div>
+                    <div class="mb-3 mt-3">
+                        <label for="orderNotes" class="form-label text-white">Observaciones</label>
+                        <textarea id="orderNotes" rows="3" class="form-control bg-dark text-light border-1 border-secondary" placeholder="Ej: Sin cebolla, extra salsa, etc."></textarea>
+                    </div>
+                    <button type="submit" id="whatsappButton" class="btn btn-success w-100">Enviar carrito por WhatsApp Business</button>
+                </form>
+            </div>
+            <div class="col-12 col-lg-6">
+                <div class="p-4 rounded-4" style="background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.08);">
+                    <h3 class="text-warning mb-3">Resumen del carrito</h3>
+                    <p class="text-light mb-2"><strong>Productos agregados:</strong></p>
+                    <p class="text-light mb-2" id="summaryItems">Ningún producto agregado aún.</p>
+                    <p class="text-light mb-2"><strong>Nombre:</strong> <span id="summaryName">-</span></p>
+                    <p class="text-light mb-2"><strong>WhatsApp:</strong> <span id="summaryPhone">-</span></p>
+                    <p class="text-light mb-2"><strong>Notas:</strong> <span id="summaryNotes">Sin observaciones</span></p>
+                    <p class="text-muted mt-3">Cuando envíes, se abrirá WhatsApp Business con el carrito completo listo para enviar.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        (function () {
+            const businessPhone = '573216714687';
+            const cart = [];
+            const cartList = document.getElementById('cartList');
+            const cartTotal = document.getElementById('cartTotal');
+            const summaryItems = document.getElementById('summaryItems');
+            const customerName = document.getElementById('customerName');
+            const customerPhone = document.getElementById('customerPhone');
+            const orderNotes = document.getElementById('orderNotes');
+            const cartForm = document.getElementById('cartForm');
+
+            function formatCurrency(amount) {
+                return '$' + amount.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+            }
+
+            function updateCartDisplay() {
+                cartList.innerHTML = '';
+                if (cart.length === 0) {
+                    cartList.innerHTML = '<li class="list-group-item bg-dark border-secondary">Carrito vacío</li>';
+                    summaryItems.textContent = 'Ningún producto agregado aún.';
+                    cartTotal.textContent = '$0';
+                    return;
+                }
+
+                let total = 0;
+                cart.forEach((item, index) => {
+                    const itemTotal = item.price * item.quantity;
+                    total += itemTotal;
+                    const listItem = document.createElement('li');
+                    listItem.className = 'list-group-item bg-dark border-secondary d-flex justify-content-between align-items-start';
+                    listItem.innerHTML = `
+                        <div class="w-100">
+                            <div class="fw-bold">${item.name}</div>
+                            <div class="d-flex flex-wrap gap-2 align-items-center mt-2">
+                                <button class="btn btn-sm btn-outline-light" onclick="changeQuantity(${index}, -1)">-</button>
+                                <span class="text-light">${item.quantity}</span>
+                                <button class="btn btn-sm btn-outline-light" onclick="changeQuantity(${index}, 1)">+</button>
+                                <button class="btn btn-sm btn-danger ms-2" onclick="removeFromCart(${index})">Eliminar</button>
+                            </div>
+                        </div>
+                        <span>${formatCurrency(itemTotal)}</span>
+                    `;
+                    cartList.appendChild(listItem);
+                });
+
+                cartTotal.textContent = formatCurrency(total);
+                summaryItems.textContent = cart.map(item => `${item.quantity} x ${item.name}`).join(', ');
+            }
+
+            window.addToCart = function (productName, productPrice) {
+                const existingItem = cart.find(item => item.name === productName);
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({ name: productName, price: productPrice, quantity: 1 });
+                }
+                updateCartDisplay();
+                document.getElementById('orderSection').scrollIntoView({ behavior: 'smooth' });
+            };
+
+            window.changeQuantity = function (index, delta) {
+                if (!cart[index]) return;
+                cart[index].quantity += delta;
+                if (cart[index].quantity < 1) {
+                    cart.splice(index, 1);
+                }
+                updateCartDisplay();
+            };
+
+            window.removeFromCart = function (index) {
+                if (!cart[index]) return;
+                cart.splice(index, 1);
+                updateCartDisplay();
+            };
+
+            function buildWhatsAppUrl() {
+                const name = customerName.value.trim();
+                const phone = customerPhone.value.trim();
+                const notes = orderNotes.value.trim() || 'Sin observaciones';
+                let message = `Hola, quiero hacer un pedido:\n\n`;
+                cart.forEach(item => {
+                    message += `${item.quantity} x ${item.name} - ${formatCurrency(item.price * item.quantity)}\n`;
+                });
+                message += `\nTotal: ${cartTotal.textContent}\nNombre: ${name}\nWhatsApp cliente: ${phone}\nNotas: ${notes}`;
+                return `https://wa.me/${businessPhone}?text=${encodeURIComponent(message)}`;
+            }
+
+            function handleSubmit(event) {
+                event.preventDefault();
+                if (cart.length === 0) {
+                    alert('Agrega al menos un producto al carrito antes de enviar el pedido.');
+                    return;
+                }
+                if (!customerName.value.trim() || !customerPhone.value.trim()) {
+                    alert('Por favor completa tu nombre y tu WhatsApp antes de enviar el pedido.');
+                    return;
+                }
+                const url = buildWhatsAppUrl();
+                window.open(url, '_blank');
+            }
+
+            cartForm.addEventListener('submit', handleSubmit);
+            customerName.addEventListener('input', updateCartDisplay);
+            customerPhone.addEventListener('input', updateCartDisplay);
+            orderNotes.addEventListener('input', updateCartDisplay);
+            updateCartDisplay();
+        })();
+    </script>
+
+    <footer class="bg-black text-center py-3 border-top border-danger">
+        <p class="mb-0 text-muted">© 2026 Picando y Pecando - Todos los derechos reservados.</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,417 @@
+/* =========================
+   ESTILOS GENERALES
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1A1A1A;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #FFFFFF;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.site-nav {
+    background: linear-gradient(
+        90deg,
+        #F28C18 0%,
+        #FF9D1C 50%,
+        #F28C18 100%
+    );
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 10px 25px;
+    margin: 6px;
+
+    border-radius: 10px;
+    border-bottom: 4px solid #C62828;
+}
+
+/* Logo y nombre */
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo {
+    height: 65px;
+    width: auto;
+    border-radius: 8px;
+}
+
+.site-title {
+    font-size: 2.2rem;
+    font-weight: 800;
+    color: white;
+    letter-spacing: 1px;
+}
+
+.site-title span {
+    color: #5A1800;
+}
+
+/* =========================
+   MENÚ
+========================= */
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: #FFFFFF;
+
+    padding: 12px 22px;
+
+    border-radius: 8px;
+    border: 1px solid rgba(255,255,255,.25);
+
+    background: rgba(255,255,255,.08);
+
+    transition: all .3s ease;
+
+    box-shadow: 0 2px 8px rgba(0,0,0,.15);
+}
+
+.nav-link:hover {
+    background: #C62828;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,.30);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #d8d8d8;
+    max-width: 700px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+/* =========================
+   BOTONES
+========================= */
+
+button {
+    margin-top: 30px;
+    padding: 14px 28px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #C62828;
+    color: white;
+
+    font-size: 18px;
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: all .3s ease;
+}
+
+button:hover {
+    background: #A91F1F;
+    transform: scale(1.05);
+}
+
+/* =========================
+   TARJETAS PRODUCTOS
+========================= */
+
+.card {
+    background: #242424;
+    border-radius: 12px;
+    overflow: hidden;
+
+    box-shadow: 0 4px 15px rgba(0,0,0,.25);
+
+    transition: .3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card img,
+.card-img-top {
+    width: 100%;
+    display: block;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Mostrar la hamburguesa completa sin recortar */
+.product-hamburguesa {
+    height: 220px;
+    object-fit: contain;
+    object-position: center;
+    background-color: #242424;
+    padding: 6px 0;
+}
+
+/* Ajuste específico para la imagen de la Tostada */
+.product-tostada {
+    height: 220px;
+    object-fit: cover;
+    object-position: center top;
+    background-color: #242424;
+    padding: 0;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h3 {
+    color: #F28C18;
+    margin-bottom: 10px;
+}
+
+.card-content p {
+    color: #d0d0d0;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: #0d0d0d;
+    color: #f8f8f8;
+    text-align: center;
+    padding: 22px 20px;
+    margin-top: 50px;
+    border-top: 3px solid #F28C18;
+}
+footer p {
+    margin: 0;
+    color: #d0d0d0;
+}
+footer p a {
+    color: #F28C18;
+    text-decoration: none;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 768px) {
+
+    .site-nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-list {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .site-title {
+        font-size: 1.7rem;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* Ajustes responsive para imágenes de productos */
+@media (min-width: 992px) {
+    .card img,
+    .card-img-top {
+        height: 260px;
+    }
+}
+
+@media (max-width: 575px) {
+    .card img,
+    .card-img-top {
+        height: 160px;
+    }
+}
+
+@media (max-width: 575px) {
+    .product-hamburguesa {
+        height: 140px;
+    }
+    .product-tostada {
+        height: 140px;
+        object-position: center top;
+    }
+}
+
+/* Estilos sección de pedidos */
+.order-section {
+    background: linear-gradient(180deg, rgba(34,34,34,0.6), rgba(17,17,17,0.6));
+    padding: 30px;
+    border-radius: 10px;
+    border: 1px solid rgba(255,255,255,0.04);
+}
+.order-section .form-label { color: #f0f0f0; }
+.order-section .form-control, .order-section .form-select, .order-section textarea {
+    background: #1f1f1f;
+    border: 1px solid rgba(255,255,255,0.06);
+    color: #fff;
+}
+.order-section .btn-success {
+    background: #22a55e;
+    border-color: #1f8a4c;
+}
+.order-section .btn-success:hover{ background:#1f8a4c }
+
+/* Logo en la sección de pedidos */
+.order-logo-col{ display:flex; align-items:center; justify-content:center; }
+.order-logo{ max-width:260px; border-radius:8px; box-shadow: 0 6px 18px rgba(0,0,0,.35); }
+
+.contact-card {
+    background: rgba(255,255,255,.05);
+    border: 1px solid rgba(255,255,255,.08);
+    box-shadow: 0 10px 30px rgba(0,0,0,.25);
+}
+
+.testimonial-carousel {
+    position: relative;
+    min-height: 260px;
+    overflow: hidden;
+    border-radius: 20px;
+    background: rgba(255,255,255,.03);
+    border: 1px solid rgba(255,255,255,.08);
+    padding: 30px;
+}
+
+.testimonial-card {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transform: scale(0.96);
+    filter: blur(6px);
+    transition: all .8s ease;
+    padding: 30px;
+    background: rgba(0,0,0,.35);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.testimonial-card.active {
+    opacity: 1;
+    transform: scale(1);
+    filter: blur(0);
+    z-index: 3;
+}
+
+.testimonial-card.previous,
+.testimonial-card.next {
+    opacity: .35;
+    transform: scale(0.92);
+    filter: blur(6px);
+    z-index: 1;
+}
+
+.testimonial-card p {
+    font-size: 1.05rem;
+    line-height: 1.8;
+    margin-bottom: 24px;
+    color: #f1f1f1;
+}
+
+.testimonial-card .name {
+    font-weight: 700;
+    font-size: 1rem;
+    color: #ffcc4d;
+}
+
+.testimonial-card .role {
+    color: #d4d4d4;
+    font-size: .9rem;
+}
+
+@media (max-width: 767px) {
+    .testimonial-carousel {
+        min-height: 260px;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 991px) {
+    .order-logo{ max-width:200px; }
+}
+
+@media (max-width: 767px){
+    .order-logo{ max-width:180px; margin-bottom: 10px }
+    .order-logo-col{ justify-content:center }
+}
+
+/* Barra de selección rápida de productos en pedidos */
+.product-bar{
+    overflow-x:auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 8px 6px;
+}
+.product-item{
+    min-width:120px;
+    max-width:140px;
+    background: #171717;
+    border: 1px solid rgba(255,255,255,0.04);
+    padding:8px;
+    border-radius:8px;
+    text-align:center;
+    cursor:pointer;
+    transition: transform .15s ease, box-shadow .15s ease;
+    margin-right:10px;
+}
+.product-item img{ height:70px; width:100%; object-fit:cover; border-radius:6px; }
+.product-item .product-name{ margin-top:6px; color:#fff; font-size:0.95rem; }
+.product-item.active{ outline:3px solid rgba(242,140,24,0.25); transform: translateY(-4px); box-shadow: 0 8px 20px rgba(0,0,0,0.4); }
+
+@media (max-width:575px){
+    .product-item{ min-width:100px; max-width:110px; }
+    .product-item img{ height:60px }
+}
+
+/* Price labels, total and modal styles */
+.product-item .product-price{ color:#f3b05b; font-weight:700; margin-top:4px }
+.order-total-display{ font-size:1.1rem; color:#fff }
+.modal-content.bg-dark{ background: #151515; border: 1px solid rgba(255,255,255,0.03); }
+.modal-header .modal-title{ color:#F28C18 }
+.btn-close-white { filter: invert(1) brightness(2); }
